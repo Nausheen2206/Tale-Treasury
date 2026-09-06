@@ -35,7 +35,7 @@ export const generateStoryStream = async (req, res) => {
 
     const stream = await groq.chat.completions.create({
       messages: formattedMessages,
-      model: "llama-3.3-70b-versatile",
+      model: "groq/compound",
       temperature: 0.9,
       max_tokens: 1200,
       stream: true,
